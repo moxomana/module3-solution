@@ -1,194 +1,72 @@
-<style>
-
-* {
-  box-sizing: border-box;
+/** HEADER **/
+#header-nav {
+  background-color: gray;
+  border-radius: 0;
+  border: 0;
 }
 
-h1 {
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 175%;
+#header-nav .container {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-h2 {
-  margin-top: 0px;
+.navbar-brand h1 { /* Restaurant name */
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
 }
 
-p {
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  color: yellow;
-}
-
-.row {
-  width: 100%;
-}
-
-.section {
-  background-color: #c7c7c7;    
-  border: 1px solid black; 
-  margin-right: 10px;    
-  margin-left: 10px;    
-  margin-bottom: 10px;
-  margin-top: 10px;      
-}
-
-.chicken {
-  margin-left: 65%;
-  font-size: 125%;
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid black;
-  border-right: none;
-  border-top: none;    
-  background-color: pink;
-  text-align: center;
 }
 
-.beef {
-  margin-left: 65%;
-  font-size: 125%;
-  border: 1px solid black;
-  border-right: none;    
-  border-top: none;
-  background-color: red;
-  text-align: center;
-  color: white;
+.navbar-collapse {
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 
-.sushi {
-  margin-left: 65%;
-  font-size: 125%;
-  border: 1px solid black;
-  border-right: none;    
-  border-top: none;
+#nav-list {
   background-color: yellow;
-  text-align: center;
+  border: 1px solid black;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  width :100%;
 }
 
-@media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-  float: left;
-  }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
+#nav-list a {
+  color: black;
+  border: 1px solid black;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-  }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
+#menu-title {
+	background-color: white;
+	padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
-@media (max-width: 767px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
-  }
-  .col-sm-1 {
-    width: 8.33%;
-  }
-  .col-sm-2 {
-    width: 16.66%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  .col-sm-5 {
-    width: 41.66%;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .col-sm-7 {
-    width: 58.33%;
-  }
-  .col-sm-8 {
-    width: 66.66%;
-  }
-  .col-sm-9 {
-    width: 74.99%;
-  }
-  .col-sm-10 {
-    width: 83.33%;
-  }
-  .col-sm-11 {
-    width: 91.66%;
-  }
-  .col-sm-12 {
-    width: 100%;
-  }
+h2 { /* Our Menu */
+  color: black;
+  font-weight: bold;
+  font-size: 1.6em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: .75;
 }
 
-</style>
+#main-content {
+  background-color: gray;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+h3 { /* Chicken */
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
